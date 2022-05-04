@@ -17,6 +17,8 @@ Where is the websocket connection hiding?
 
 ![image](https://user-images.githubusercontent.com/49009864/166717351-1e0966c9-f548-499f-8ff4-90a2b4d5ac3d.png)
 
+![image](https://user-images.githubusercontent.com/49009864/166725714-540d3f71-e2b6-43b2-b2e2-5c4f76340a44.png)
+
 The websocket connection is maded within the shared worker.
 You can see it at chrome://inspect/#workers 
 
