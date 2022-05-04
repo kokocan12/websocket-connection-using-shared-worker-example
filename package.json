@@ -1,0 +1,30 @@
+{
+  "name": "websocket-with-shared-worker",
+  "version": "1",
+  "description": "implementating  websocket connection with shared worker",
+  "author": "dlgudwnsl1234@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "simple-git-hooks",
+    "lint-staged": "lint-staged",
+    "dev": ""
+  },
+  "lint-staged": {
+    "server/**/*.ts": "eslint --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "yarn lint-staged"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "simple-git-hooks": "^2.7.0",
+    "typescript": "^4.6.4"
+  }
+}
