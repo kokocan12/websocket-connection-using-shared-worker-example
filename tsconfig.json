@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    /* Modules */
+    "module": "CommonJS" /* Specify what module code is generated. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "outDir": "./dist/server"
+  },
+  "include": ["server/**/*.ts"]
+}

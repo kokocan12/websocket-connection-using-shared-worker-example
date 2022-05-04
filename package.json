@@ -7,7 +7,7 @@
   "scripts": {
     "postinstall": "simple-git-hooks",
     "lint-staged": "lint-staged",
-    "dev": ""
+    "dev": "tsc -w"
   },
   "lint-staged": {
     "server/**/*.ts": "eslint --fix"
