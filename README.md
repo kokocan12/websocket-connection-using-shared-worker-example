@@ -1,7 +1,7 @@
 # intro
-Apps like github provide users with real-time reponses
-
 ![1](https://user-images.githubusercontent.com/49009864/166714532-e6de49f4-ff73-4862-aaa8-d6734e2f64cf.gif)
+
+Apps like github provide users with real-time reponses.
 
 When someone sends requests to the server, the other one can see the changes without having to refresh the page.
 
