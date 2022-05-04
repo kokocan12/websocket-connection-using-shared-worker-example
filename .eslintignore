@@ -2,3 +2,5 @@
 node_modules
 #빌드폴더제외
 dist
+#캐시폴더제외
+.cache
