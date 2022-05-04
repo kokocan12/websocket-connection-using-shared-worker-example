@@ -25,7 +25,7 @@ You can see it at chrome://inspect/#workers
 When using a shared worker, all tabs and windows shared the context of worker. Therefor even if many tabs are opened, the connection through the worker is only once.
 It can reduce the load on the server.
 
-# A shared worker alone is not enough
+# A shared worker alone is not enough.
 
 ![image](https://user-images.githubusercontent.com/49009864/166721812-37175724-b177-46c2-8d8e-f2360f7d56b5.png)
 
