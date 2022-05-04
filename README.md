@@ -1,4 +1,4 @@
-# intro
+# Intro
 ![1](https://user-images.githubusercontent.com/49009864/166714532-e6de49f4-ff73-4862-aaa8-d6734e2f64cf.gif)
 
 Apps like github provide users with real-time reponses.
@@ -20,9 +20,9 @@ Where is the websocket connection hiding?
 The websocket connection is maded within the shared worker.
 You can see it at chrome://inspect/#workers 
 
-# why should I use SharedWorker when using a websocket connection?
+# Why should I use SharedWorker when using a websocket connection?
 
-when using a shared worker, all tabs and windows shared the context of worker. Therefor even if many tabs are opened, the connection through the worker is only once.
+When using a shared worker, all tabs and windows shared the context of worker. Therefor even if many tabs are opened, the connection through the worker is only once.
 It can reduce the load on the server.
 
 # A shared worker alone is not enough
