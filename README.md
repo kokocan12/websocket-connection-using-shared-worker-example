@@ -23,7 +23,7 @@ You can see it at <chrome://inspect/#workers>
 
 # Why should I use SharedWorker when using a websocket connection?
 
-When using a shared worker, all tabs and windows shared the context of worker. It means that even if many tabs are opened, the connection through the worker is only once.
+When using a shared worker, all tabs and windows shared the context of worker. It means that even if many tabs are opened, the connection through the worker is made only once.
 It can reduce the load on the server.
 
 # A shared worker alone is not enough.
