@@ -33,7 +33,7 @@ It can reduce the load on the server.
 
 When many tabs are opened, The changes should be reflected into all tabs. Using BroadCastChannel makes this easier. BroadCastChannel sends a message to all tabs at the same time.
 
-In conclusion, the connection with the server should be made using shared worker and the BroadCastChannel is used to reflect the change into all tabs.
+In conclusion, the connection with the server should be made using shared worker, also the BroadCastChannel is good choice to reflect the change into all tabs.
 
 # Demo
 
