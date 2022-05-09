@@ -1,17 +1,16 @@
-# Intro
+# Introduce
 ![1](https://user-images.githubusercontent.com/49009864/166714532-e6de49f4-ff73-4862-aaa8-d6734e2f64cf.gif)
 
-Apps like github provide users with real-time reponses.
+Apps like github provide users with real-time reponses,
+I can see changes without refreshing the page when something in server is changed.
 
-When someone sends requests to the server, the other one can see the changes without having to refresh the page.
+To implement this, polling or websocket are used.
 
-To implement this, polling or websocket are used. Of couse github uses websocket.
-
-But I don't see websocket connection.
+Github uses websocket, but I don't see websocket connection.
 
 ![image](https://user-images.githubusercontent.com/49009864/166716878-9e16c085-2b07-4958-b148-8cfc4345cbc2.png)
 
-Where is the websocket connection hiding?
+Where is the websocket connection?
 
 # SharedWorker
 
@@ -19,12 +18,12 @@ Where is the websocket connection hiding?
 
 ![image](https://user-images.githubusercontent.com/49009864/166725714-540d3f71-e2b6-43b2-b2e2-5c4f76340a44.png)
 
-The websocket connection is maded within the shared worker.
-You can see it at chrome://inspect/#workers 
+The websocket connection is maded in the shared worker.
+You can see it at <chrome://inspect/#workers>
 
 # Why should I use SharedWorker when using a websocket connection?
 
-When using a shared worker, all tabs and windows shared the context of worker. Therefor even if many tabs are opened, the connection through the worker is only once.
+When using a shared worker, all tabs and windows shared the context of worker. It means that even if many tabs are opened, the connection through the worker is only once.
 It can reduce the load on the server.
 
 # A shared worker alone is not enough.
@@ -33,7 +32,9 @@ It can reduce the load on the server.
 
 When many tabs are opened, The changes should be reflected into all tabs. Using BroadCastChannel makes this easier. BroadCastChannel sends a message to all tabs at the same time.
 
-In conclusion, the connection with the server should be made using shared worker, also the BroadCastChannel is good choice to reflect the change into all tabs.
+# Conclusion
+I get some advantages when making websocket connection with server using shared worker.
+Also the BroadCastChannel is good choice to reflect the change into all tabs.
 
 # Demo
 
