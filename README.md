@@ -18,7 +18,7 @@ Where are the websocket connections?
 
 ![image](https://user-images.githubusercontent.com/49009864/166725714-540d3f71-e2b6-43b2-b2e2-5c4f76340a44.png)
 
-The websocket connections are maded in the shared worker.
+The websocket connections are maded in shared worker.
 You can see it at <chrome://inspect/#workers>
 
 # Why should I use SharedWorker when using a websocket connection?
