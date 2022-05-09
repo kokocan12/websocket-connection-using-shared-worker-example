@@ -33,11 +33,11 @@ It can reduce the load on the server.
 When many tabs are opened, The changes should be reflected into all tabs. Using BroadCastChannel makes this easier. BroadCastChannel sends a message to all tabs at the same time.
 
 # Conclusion
-I get some advantages when making websocket connection with server using shared worker.
+You get some advantages when making websocket connections with server using shared worker,
 Also the BroadCastChannel is good choice to reflect the change into all tabs.
+
+The context of shared worker persists until all tabs are closed. Even if an additional tab is opened, it uses websocket connections that was maded before.
 
 # Demo
 
 ![3](https://user-images.githubusercontent.com/49009864/166724566-97f0dcff-4749-4237-8a3b-bb3acaed6e89.gif)
-
-The context of shared worker persists until all tabs are closed. Even if an additional tab is opened, it will use already exist websocket connection that is maded in shared worker. UI updates are done through the BroadCastChannel
