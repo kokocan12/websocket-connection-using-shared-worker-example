@@ -1,6 +1,5 @@
 # Description
 **This is an example of websocket connection with server using shared worker.**<br/>
-**Server-side code is not much different from a typical websocket server.**<br/>
 **Check out [client/*.ts](https://github.com/kokocan12/websocket-connection-using-shared-worker-example/blob/main/client) to grasp structure of websocket connection.**
 
 # Introduce
