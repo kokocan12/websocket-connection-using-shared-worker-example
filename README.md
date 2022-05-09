@@ -1,6 +1,6 @@
 # Description
-**This is a example of websocket connection with server.**
-**Server-side code is not much different from a typical websocket server.**
+**This is a example of websocket connection with server.**<br/>
+**Server-side code is not much different from a typical websocket server.**<br/>
 **Check out client/worker.ts**
 
 # Introduce
