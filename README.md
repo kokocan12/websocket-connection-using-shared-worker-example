@@ -6,11 +6,11 @@ I can see changes without refreshing the page when something in server is change
 
 To implement this, polling or websocket are used.
 
-Github uses websocket, but I don't see websocket connection.
+Github uses websocket, but I can't see any websocket connections.
 
 ![image](https://user-images.githubusercontent.com/49009864/166716878-9e16c085-2b07-4958-b148-8cfc4345cbc2.png)
 
-Where is the websocket connection?
+Where are the websocket connections?
 
 # SharedWorker
 
@@ -18,7 +18,7 @@ Where is the websocket connection?
 
 ![image](https://user-images.githubusercontent.com/49009864/166725714-540d3f71-e2b6-43b2-b2e2-5c4f76340a44.png)
 
-The websocket connection is maded in the shared worker.
+The websocket connections are maded in the shared worker.
 You can see it at <chrome://inspect/#workers>
 
 # Why should I use SharedWorker when using a websocket connection?
